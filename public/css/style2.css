@@ -1,0 +1,1641 @@
+/*fonts */
+@font-face {
+    font-family: sora;
+    src: url(/fonts/Sora-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sora;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth ;
+}
+
+/*--------------------tags ------------------------*/
+
+body {
+    font-family: sora;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 30%;
+    color:#003775;
+}
+@media(max-width: 500px){
+    header{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 30px;
+    }
+
+}
+.locais{
+    font-family: sora;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #002550;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.contatos {
+    font-family: sora;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #002550;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 120px;
+}
+
+.background {
+    background: url(/img/fundo_principal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 72vh;
+}
+
+
+.home-text {
+    font-size: 2.4rem;
+    text-align: center;
+    color: white;
+    font-family: sora;
+    font-weight: 300;
+}
+
+.elo2{
+    margin-left: 28%;
+}
+.elo2::before{
+    content: "";
+    position: absolute;
+    background-color: #ffe355;
+    border-radius: 40px;
+    width: 30px;
+    height: 7px;
+    transform: translate(0px,200px);
+}
+.elo2::after{
+    content: "";
+    position: absolute;
+    background-color: #ffe355;
+    border-radius: 50px;
+    width: 7px;
+    height: 7px;
+    transform: translate(40px,-3px);
+}
+.elo2 h2{
+    font-weight: 2rem;
+    color: white;
+    font-family: sora;
+    font-size: 2.7rem;
+    max-width: 300px;
+    text-align: start;
+}
+.elo2 h2 strong{
+    font-size: 3rem;
+    color: #ffe355;
+}
+.elo2 h2::after{
+    content: "";
+    position: absolute;
+    border: 2px solid #0069e271;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    transform: translate(-450px,-100px);
+
+    animation-name: elo3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.elo2 h2::before{
+    content: "";
+    position: absolute;
+    border: 2px solid #ffe35531;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    transform: translate(-100px,-40px);
+
+    animation-name: elo4;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.elo2 h2 b{
+    color: #ffe355;
+    font-family: sora;
+    font-style: normal;
+}
+
+@keyframes elo3{
+    from{
+        transform: translate(-110px,-100px);
+    }
+    to{
+        transform: translate(-400px,-100px);
+        border: 1px solid #026de738;
+    }
+}
+
+@keyframes elo4{
+    from{
+        transform: translate(-100px,-40px);
+    }
+    to{
+        transform: translate(200px,-40px);
+        border: 1px solid #ffe3554d;
+    }
+}
+
+.predio {
+    margin-top: 150px;
+    width: 600px;
+}
+
+/*---------------------- sections -----------------------*/
+
+main.cards {
+
+    background: url(/img/Canaã\ Mídia\ 2024-02.png);
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    justify-self: center;
+    gap: 50px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(63, 86, 214, 0.151);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 150px;
+    margin-left: 32px;
+    border: 0;
+
+    
+
+}
+
+#contact{
+    animation-name: linha;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#shop{
+    animation-name: linha;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#about{
+    animation-name: linha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+
+main.cards section.card span {
+    font-weight: 400;
+    max-width: 280px;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: #030744a6;
+
+}
+
+
+@media screen and (max-width: 785px) {
+    main.cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main.cards section.card {
+        margin-bottom: 32px;
+
+        animation-name: linha;
+        animation-play-state: running;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+}
+
+/*----- section3----------*/
+
+.section3 {
+
+    background: url(/img/Canaã\ Mídia\ 2024-03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 1200px;
+}
+
+.textos {
+    max-width: 37rem;
+    
+    margin-top: 200px;
+}
+
+.expo {
+    font-weight: 800;
+    font-size: 5rem;
+    color: white;
+    font-family: sora;
+    padding-bottom: 25px;
+
+}
+
+.pont {
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+    font-family: sora;
+}
+
+.pont2 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 6rem;
+    color: white;
+    font-family: sora;
+}
+
+.p200 {
+    font-weight: 1000;
+    font-size: 8rem;
+    margin: 0;
+    font-family: sora;
+    padding: 0;
+    color: #ffe355;
+    line-height: 4rem;
+
+}
+
+.quadro1 {
+    background: #4182cc;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    max-width: 320px;
+    font-size: 2rem;
+    font-family: sora;
+    color: white;
+}
+
+.quadro2 {
+    background: #ffe355;
+    font-family: sora;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    max-width: 320px;
+    color: #4182cc;
+    font-size: 2rem;
+
+}
+
+.divEdificio {
+    padding-top: 100px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divEdificio h2 {
+    color: #ffe355;
+    font-family: sora;
+    text-align: end;
+    font-size: 6rem;
+    max-width: 500px;
+    padding-bottom: 70px;
+}
+
+/*--------- response ---------*/
+
+@media(max-width: 785px) {
+    .section3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .divEdificio {
+        width: 95%;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divEdificio h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .textos {
+        max-width: 35rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .expo {
+        font-weight: 800;
+        font-size: 3rem;
+        color: white;
+        padding-bottom: 25px;
+
+    }
+
+    .pont {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .pont2 {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .p200 {
+        font-weight: 800;
+        font-size: 5rem;
+        color: #ffe355;
+        line-height: 2.5rem;
+
+    }
+
+    .quadro1 {
+        background: #4182cc;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+
+    }
+
+    .quadro2 {
+        background: #ffe355;
+        ;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+
+        color: #4182cc;
+
+    }
+}
+
+/*----- section4 -----*/
+
+.section4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding-top: 30px;
+    align-self: center;
+    background: url(/img/Canaã\ Mídia\ 2024-04.png);
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.section4 div h1 {
+    font-size: 2.5rem;
+    max-width: 400px;
+    margin-bottom: 50px;
+    margin-left: 90px;
+    color: #0858b3;
+
+}
+
+.section4 div h2 {
+    font-size: 2.5rem;
+    max-width: 200px;
+    color: #0858b3;
+    font-weight: 700;
+
+}
+
+.section4 div img {
+    width: 500px;
+}
+
+.section4 div .divimg {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.tops {
+    display: flex;
+}
+
+.tops .container_tops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 450px;
+}
+
+
+
+.tops .container_tops .top1 {
+    background-color: #0858b3;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 15px;
+    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+
+    animation-name: animação;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.tops .container_tops div {
+    display: flex;
+    background-color: #0858b3;
+    justify-content: left;
+    align-items: center;
+    align-self: center;
+    gap: 30px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 10px 10px 25px;
+    margin-bottom: 10px;
+
+    animation-name: animação;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animação{
+    0%{
+        background-color: #026de7;
+    }
+    100%{
+        background-color: #0858b3;
+    }
+
+    
+}
+
+.tops .container_tops div p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.tops .container_tops div h1 {
+    color: white;
+    margin: 0;
+    font-size: 5rem;
+}
+
+.tops .container_tops div img {
+    width: 30px;
+    height: 35px;
+}
+
+.top_text {
+    font-size: 2rem;
+    color: #0858b3;
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+@media(max-width: 785px) {
+
+    *{
+        transition: 1s;
+    }
+
+    .section4 .led {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section4 div img {
+        width: 70%;
+    }
+
+    .section4 div h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .section4 div .divimg {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section4 div h2 {
+        max-width: 500px;
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+
+    .section4 {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .top_text {
+        text-align: center;
+    }
+
+    .tops .container_tops {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 400px;
+    
+    }
+}
+
+/*----- section5 ------*/
+
+.section5{
+    background: url(/img/Canaã\ Mídia\ 2024-05.png);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section5 .classe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sora;
+    margin-left: 80px;        
+}
+
+.section5 .classe h1{
+    color: #0858b3;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: sora;
+}
+.section5 .classe span img{
+    width: 70px;
+    font-family: sora;
+    height: 15px;
+    padding-right: 30px;
+}
+.section5 .classe span{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: sora;
+    color: #0858b3;
+}
+
+.section5 .text_classe div{
+  display: flex;
+}
+
+.section5 .text_classe div .grafico{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grafico .masc{
+    margin-left: 20px;
+    font-family: sora;
+}
+.grafico .fem{
+    margin-left: 20px;
+    font-family: sora;
+}
+.grafico .masc::before{
+    content: "";
+    border: 2px solid #0858b3;
+    transform: translate(-15px,5px);
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.grafico .fem::before{
+    content: "";
+    border: 2px solid #0858b3;
+    transform: translate(-15px,5px);
+    position: absolute;
+    background-color: #0858b3;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.section5 .text_classe div .grafico h1{
+    background-color: #0858b3;
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    font-weight: 700;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.section5 .text_classe div .grafico div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 1.5rem;
+    color: #0858b3;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+
+.section5 .text_classe div .grafico h1::after{
+    content: "55";
+    color: #0858b3;
+    padding: 100px;
+    border-radius: 125px;
+    font-weight: 700;
+    display: inline-block;
+    border: 1.5px solid #0858b3;
+    position: absolute;
+    left: 0px;
+    transform: translate(0px,-100px);
+}
+
+.barras{
+    margin: 0px;
+    display: flex;
+    align-items: end;
+    gap: 30px;
+}
+
+
+.barras div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0px;
+
+}
+.barras div  h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0px;
+}
+.barras div  .b0{
+    background-color: #0858b3;
+    border-radius: 10px;
+    padding: 30px 25px 10px 25px;
+    margin: 0px;
+}
+
+.barras div .b1{
+    background-color: #0858b3;
+    border-radius: 10px;
+    padding: 15px 25px 10px 25px;
+    margin: 0px;
+}
+
+.barras div .b2{
+    background-color: #0858b3;
+    border-radius: 10px;
+    padding: 90px 25px 10px 25px;
+    margin: 0px;
+}
+
+.barras div .b3{
+    background-color: #0858b3;
+    border-radius: 10px;
+    padding: 60px 25px 10px 25px;
+    margin: 0px;
+}
+.barras div div p {
+    color: #026de7;
+    font-weight: 600;
+    margin: 0px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+.hidde{
+    width: 500px;
+    height: 100px;
+}
+
+@media(max-width: 785px){
+ 
+    .section5{
+        background: url(/img/Canaã\ Mídia\ 2024-05-2.png);
+        height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    .hidde{
+        display: none;
+    }
+
+    .barras{
+        margin: 0px;
+        display: flex;
+        align-items: end;
+        gap: 10px;
+    }
+    .section5 .classe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;        
+    }
+
+}
+
+
+/*----------section6-----------*/
+
+.section6{
+    background: url(/img/Canaã\ Mídia\ 2024-06.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 95vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.elo h2{
+    font-weight: 6rem;
+    color: white;
+    font-family: sora;
+    font-size: 5rem;
+    max-width: 320px;
+}
+.elo h2::after{
+    content: "";
+    position: absolute;
+    border: 2px solid #0069e271;
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    transform: translate(-450px,-200px);
+
+    animation-name: elo1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.elo h2::before{
+    content: "";
+    position: absolute;
+    border: 2px solid #ffe35569;
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    transform: translate(-300px,-80px);
+
+    animation-name: elo2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.elo h2 b{
+    color: #ffe355;
+    font-family: sora;
+    font-style: normal;
+}
+
+
+.steps{
+    display: flex;
+    flex-direction: column;
+}
+.steps span{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    max-width: 450px;
+    align-items: center;
+}
+.steps span h2{
+    color: white;
+    font-family: sora;
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.steps span p{
+    color: white;
+    font-family: sora;
+    font-size: 1.5rem;
+}
+
+@media(max-width: 785px){
+    .section6{
+        height: 120vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .elo h2::after{
+        content: "";
+        position: absolute;
+        border: 2px solid #0069e271;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        transform: translate(-450px,-200px);
+    
+        animation-name: elo1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .elo h2::before{
+        content: "";
+        position: absolute;
+        border: 2px solid #ffe35569;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        transform: translate(-300px,-80px);
+    
+        animation-name: elo2;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+
+}
+@keyframes elo1{
+    from{
+        transform: translate(-450px,-200px);
+    }
+    to{
+        transform: translate(-300px,-200px);
+        border: 1px solid #026de738;
+    }
+}
+
+@keyframes elo2{
+    from{
+        transform: translate(-300px,-80px);
+    }
+    to{
+        transform: translate(100px,-80px);
+        border: 1px solid #ffe3554d;
+    }
+}
+/*---------- section -----------*/
+
+.section7{
+    background: url(/img/Canaã\ Mídia\ 2024-05-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+@media(max-width: 875px){
+    .section7 .text_led{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.section7 .text_led{
+    max-width: 500px;
+
+}
+.text_led h1{
+    margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #003775;
+}
+.text_led h3{
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #003775;
+}
+.text_led p{
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #003775;
+}
+.text_led h4{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #003775;
+}
+
+.img_led{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img_led h2{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+
+/*------------ section8 ------------*/
+
+.section8{
+    background: url(/img/Canaã\ Mídia\ 2024-17.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin-top: 30px;
+    height: 135vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos{
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    width: 90%;
+}
+.infos h1{
+    color: #ffe355;
+    font-weight: 600;
+    font-family: sora;
+    font-size: 5rem;
+}
+.infos p{
+    color: white;
+    font-weight: 200;
+    max-width: 300px;
+    font-family: sora;
+    font-size: 1.5rem;
+}
+.infos img{
+    max-width: 400px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.infos h4{
+    color: #ffe355;
+    font-weight: 400px;
+    margin-top: 25px;
+    font-family: sora;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.infos ul li{
+    font-size: 1.5rem;
+    font-family: sora;
+}
+.infos ul{
+    font-size: 1.5rem;
+    font-family: sora;
+    margin-left: 40px;
+}
+
+.metro{
+    width: 100%;
+    display: flex;
+    margin-top: -78px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+@media(max-width: 785px){
+    
+    .section8{
+
+        margin-top: 30px;
+        height: 300vh;
+        display: flex;
+
+
+    }
+    .infos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .metro{
+        margin-top: 5px;
+    }
+    .telas div{
+        width: 100%;
+    }
+    .telas{
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .placa{
+        display: none;
+    }
+
+
+}
+
+
+@keyframes trem{
+    0%{
+        left: 206%;
+         top: 30%;
+    }
+    100%{
+        left: -206%;
+         top: 30%;
+    }
+}
+
+.placa{
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+
+    animation-name: placa;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes placa{
+
+    0%{
+    left: 7%;
+    }
+    100%{
+    left: 7.5%;
+
+    }
+
+}
+.estacao{
+    height: 500px;
+    width: 100%;
+    position: relative;
+   /* border: 2px solid cadetblue;*/
+    overflow: hidden;
+}
+.estacao .est1{
+    position: absolute;
+    left: 28%;
+    top: 12%;
+    width: 400px;
+    height: 350px;
+
+}
+.estacao .est2{
+    position: absolute;
+    left: 95%;
+    top: 30%;
+    width: 1600px;
+    height: 120px;
+
+    animation-name: trem;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.estacao .est3{
+    position: absolute;
+    left: 0%;
+    top: 53%;
+    width: 20000px;
+    height: 20px;
+}
+
+.telas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    max-width: 90%;
+    margin-top: -60px;
+}
+.telas div{
+    text-align: center;
+    background-color: #003b7e;
+    color: #ffe355;
+    border-radius: 30px;
+}
+.telas h3{
+    text-align: center;
+    color: #ffe355;
+    font-family: sora;
+    margin-top: 5px;
+}
+.telas img{
+    border-radius: 30px;
+}
+
+/*------------- footer ---------*/
+
+
+.footer{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+@media(max-width: 785px){  
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding-top: 50px;     
+       }
+        .email{
+            margin-top: 50px;
+            transform: none;
+        }
+}
+
+
+/*------------- canaa ------>*/
+
+.canaa {
+    width: 600px;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*------- linha 1 --------*/
+
+.linha {
+    position: absolute;
+    top: 110vh;
+    left: 65%;
+    transform: translate(-50%, -50%);
+
+    animation-name: linha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes linha{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(2vw - 40px));
+    }
+
+    
+}
+
+.linha1::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: #59a6fd98;
+}
+
+.linha1::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: #1d86ff98;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    top: 15px;
+}
+
+.linhaSeta::before {
+    content: "";
+    border-radius: 30px;
+    width: 5px;
+    height: 5px;
+    background-color: #1d86ff98;
+    position: absolute;
+
+    left: 65%;
+    transform: translate(-50%, -50%);
+    top: 30px;
+}
+
+.linha2 {
+    width: 5px;
+    height: 5px;
+    background-color: #4182cc;
+    border-radius: 5px;
+    position: absolute;
+    left: 148px;
+    top: -40px;
+}
+
+.linha2::after {
+    content: "";
+    width: 1px;
+    height: 36px;
+    background-color: #4182cc;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+}
+
+/*------- linha 0 --------*/
+
+.linha0 {
+    position: absolute;
+    top: 110vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation-name: linha;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.linha00::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: #1d86ff98;
+}
+
+.linha00::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: #1d86ff98;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    top: 15px;
+}
+
+.linhaSeta0::before {
+    content: "";
+    border-radius: 30px;
+    width: 5px;
+    height: 5px;
+    background-color: #1d86ff98;
+    position: absolute;
+
+    left: 65%;
+    transform: translate(-50%, -50%);
+    top: 30px;
+}
+
+.linha000 {
+    width: 5px;
+    height: 5px;
+    background-color: #4182cc;
+    border-radius: 5px;
+    position: absolute;
+    left: 57px;
+    top: -40px;
+}
+
+.linha000::after {
+    content: "";
+    width: 1px;
+    height: 36px;
+    background-color: #4182cc;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+}
+
+/*------- linha 3 --------*/
+
+.linha3 {
+    position: absolute;
+    top: 110vh;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+    animation-name: linha;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.linha33::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #1d86ff98;
+}
+
+.linha33::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: #1d86ff98;
+    left: 200px;
+    transform: translate(-50%, -50%);
+    top: 15px;
+}
+
+.linhaSeta3::before {
+    content: "";
+    border-radius: 30px;
+    width: 5px;
+    height: 5px;
+    background-color: #1d86ff98;
+    position: absolute;
+
+    left: 200px;
+    transform: translate(-50%, -50%);
+    top: 30px;
+}
+
+.linha333 {
+    width: 5px;
+    height: 5px;
+    background-color: #4182cc;
+    border-radius: 5px;
+    position: absolute;
+    left: -2px;
+    top: -40px;
+}
+
+.linha333::after {
+    content: "";
+    width: 1px;
+    height: 36px;
+    background-color: #4182cc;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+}
+
+/*--- responsividade linhas ----*/
+
+@media(max-width: 770px){
+
+    /*------- linha 1 --------*/
+
+    .linha {
+       display: none;
+    }
+
+    
+    .linha2 {
+       display: none;
+    }
+
+   
+
+    /*------- linha 0 --------*/
+
+    .linha0 {
+        display: none;
+    }
+
+  
+
+    /*------- linha 3 --------*/
+
+    .linha3 {
+        display: none;
+    }
+
+   
+}
+
+
+
+
+/* responsividade  */
+
+
+@media(max-width:800px) {
+    .canaa {
+        display: none;
+    }
+
+    main.cards {
+
+        background: url(/img/Canaã\ Mídia\ 2024-02.png);
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        padding: 32px;
+        justify-content: center;
+        justify-self: center;
+        gap: 15px;
+    }
+}
+
+
+/*------------------------- Responsividade 800%  ----------------------*/
+
+@media (max-width:800px) {
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 25px 12%;
+        gap: 30%;
+    }
+    .elo2{
+        margin-left: 0;
+
+    }
+    .elo2 h2{
+        text-align: center;
+    }
+    .locais {
+        margin-left: 10px;
+    }
+
+    .background {
+        flex-direction: column;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+
+/*--------- tags slider ----------*/
+
+.text div:first-child, h2, h1,h1 {
+    color: #003775;
+    font-family: sora;
+}
+.text_local{
+    font-weight: 800;
+    font-size: 3.9rem;
+    font-family: sora;
+}
+.text-local2{
+    font-weight: 400;
+    font-family: sora;
+    font-size: 1.4rem;
+}
+.mt-0{
+    font-size: 2rem;
+    font-family: sora;
+}
+.desc{
+    font-family: sora;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+}
+#text{
+    background-color: #ffffff;
+}
+@media(max-width: 785px){
+    .desc{
+        align-items: center;    
+    }
+}
